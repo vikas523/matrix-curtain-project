@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Document</title>
+    <style>
+      .content {
+  width: 50%;
+  display: flex;
+  margin: 1.5%;
+  float: right;
+  margin-bottom: 3%;
+  border: 1px solid #FFFFFF;
+  background-color: #F7F7F7;
+  border-radius: 5px;;
+  }
+
+  .image{
+    height: 78vh;
+    width: 95vh;
+    margin-top: 20px;
+    border: 1px solid beige;
+  }
+  
+    </style>
+</head>
+<body>
+  <img src="./images jk.jpg" class="image">
+  <div class="content">
+       
+    <div>
+      <h1>custom price calculator</h1>
+        <h4 style="padding: 6px 15px;background-color: #5D6D7E;color: #FFFFFF;font-family:ver; width: 188%;">Specify Your Requirements		
+        </h4>
+        <div class="woosppo_main_parent_divv" style="padding: 15px 15px 15px 15px;">
+            <input type="hidden" id="woosppo_all_rules_encapsulated" value='[]'>
+	
+
+            Select Color:
+    <select id="color">
+      <option value="blue">Blue </option>
+      <option value="Ivory">Ivory </option>
+      <option value="Cream">Cream </option>
+      <option selected value="green">Green </option>
+      <option value="maple">Maple </option>
+    </select>
+    <br />
+    WIdth: <input type="number" id="width" name="width" />
+    <br />
+    Height: <input type="number" id="height" name="height" />
+    <br />
+    
+    wrinkles :
+    <select id="wrinkles">
+      <option value="none">none</option>
+      <option  selected value="x1.5">x1.5 </option>
+      <option value="x2">x2 </option>
+      <option value="hooks tape">hooks tape </option>
+    </select>
+    <br />
+    headRails :
+    <select id="headRail">
+      <option value="none">none </option>
+      <option selected value="curtain-rail 25mm pole">curtain-rail 25mm pole </option>
+      <option value="curtain-rail 35mm pole">curtain-rail 35mm pole </option>
+   
+    </select>
+    
+    <br />
+  
+    shipping :
+    <select id="shipping">
+      <option value="genral">genral </option>
+      <option selected value="express">express </option>
+    </select>
+  </div>
+
+
+        <h4 style="padding: 6px 15px;background-color: #5D6D7E;color: #FFFFFF;font-family:ver; width: 188%">Calculated Results	
+        </h4>
+    
+        <button id="submitBtn">multiply</button>
+        <br />
+        total price: <input disabled id="total" />
+      </br>
+
+        <button id="submitBtn1">addition</button>
+        <br />
+        total price: <input disabled id="total1" />
+
+      </br>
+
+      <button id="submitBtn2">subtraction</button>
+      <br />
+      total price: <input disabled id="total2" />
+
+
+      <h4 style="padding: 6px 15px;background-color: #5D6D7E;color: #FFFFFF;font-family:ver; width: 188%">New Functionality	
+         </h4>
+         Height : <select name="height" id="new-height">
+           <option value="none">None</option>
+         </select>
+        </br>
+         Width : <select name="width" id="new-width">
+
+           <option value="none">None</option>
+         </select>
+        </br>
+      total price: <input disabled id="newTotal" />
+      </div>
+    
+        <script src="src/index.js"></script>
+      
+</body>
+</html>
